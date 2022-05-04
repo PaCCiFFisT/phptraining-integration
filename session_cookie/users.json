@@ -1,0 +1,27 @@
+{
+  "alex": {
+    "name": "Alex",
+    "login": "one",
+    "pass": "1"
+  },
+  "ira": {
+    "name": "Ira",
+    "login": "two",
+    "pass": "2"
+  },
+  "serhii": {
+    "name": "Serhii",
+    "login": "three",
+    "pass": "3"
+  },
+  "Mike": {
+    "name": "Mike",
+    "login": "four",
+    "password": "4"
+  },
+  "Karen": {
+    "name": "Karen",
+    "login": "five",
+    "password": "5"
+  }
+}
