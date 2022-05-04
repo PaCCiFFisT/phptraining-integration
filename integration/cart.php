@@ -10,7 +10,10 @@
 </head>
 <body>
 <?php
-$option = $_GET['id'];
+
+  $option = $_GET['id'];
+
+var_dump($_GET['id']);
 include './products.php';
 ?>
 <header class="header">
@@ -32,6 +35,7 @@ include './products.php';
 <span class="completing__text"></span>
 <ul class="catalog__list">
   <?php
+  if ($_GET['id']!=NULL){
   foreach ($products as $product){
     if($product['id'] == $option){?>
       <li class="catalog__item cart__item">
@@ -41,6 +45,7 @@ include './products.php';
       </li>
     <?php }
   }
+
   ?>
 </ul>
 <form method="post" action="buy-complete.php?id=<?=$option?>">
@@ -48,6 +53,10 @@ include './products.php';
   <input type="text" name="name" id="name">
   <input class="submit__btn" type="submit" name="submit" value="Submit">
 </form>
+<?php }else{
+  echo '<h2>You have not chosen anything</h2>';
+ }
+ ?>
 <script src="./index.js"></script>
 </body>
 
