@@ -1,0 +1,68 @@
+.menu__link {
+  text-decoration: none;
+  color: black;
+}
+.menu__link:hover {
+  text-decoration: underline;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form__upload::file-selector-button {
+  background-color: wheat;
+  color: #333333;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.form__upload::file-selector-button:hover {
+  background-color: darkkhaki;
+  color: black;
+  transition: 0.3s;
+}
+.form__btn {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: wheat;
+  color: #333333;
+  cursor: pointer;
+}
+.form__btn:hover {
+  background-color: darkkhaki;
+  color: black;
+  transition: 0.3s;
+}
+
+img {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.gallery__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 250px;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px;
+}
+.gallery__img--title {
+  font-size: 20px;
+}
+.gallery__checkbox {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
