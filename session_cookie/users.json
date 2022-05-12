@@ -1,27 +1,17 @@
-{
-  "alex": {
+[
+  {
+    "name": "1",
+    "login": "1",
+    "pass": "356a192b7913b04c54574d18c28d46e6395428ab"
+  },
+  {
+    "name": "2",
+    "login": "2",
+    "pass": "da4b9237bacccdf19c0760cab7aec4a8359010b0"
+  },
+  {
     "name": "Alex",
-    "login": "one",
-    "pass": "1"
-  },
-  "ira": {
-    "name": "Ira",
-    "login": "two",
-    "pass": "2"
-  },
-  "serhii": {
-    "name": "Serhii",
-    "login": "three",
-    "pass": "3"
-  },
-  "Mike": {
-    "name": "Mike",
-    "login": "four",
-    "password": "4"
-  },
-  "Karen": {
-    "name": "Karen",
-    "login": "five",
-    "password": "5"
+    "login": "alex123",
+    "pass": "f9a7c6df341325822e3ea264cfe39e5ef8c73aa4"
   }
-}
+]

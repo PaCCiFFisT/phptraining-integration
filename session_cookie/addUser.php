@@ -1,18 +1,23 @@
 <?php
 session_start();
-$data = $_POST;
-
-$jsonData = "
-  ,"."\"".$name."\"". ':' . json_encode(array_slice($data,0,3))."
-}";
-
+$data = [
+  'name'=>$_POST['name'],
+  'login'=>$_POST['login'],
+  'pass'=>sha1($_POST['password'])
+];
 $fName= 'users.json';
-$file = fopen($fName, 'r+');
-
-if (!$file){
-  $file = fopen($fName, 'w+');
+if (!file_exists($fName)){
+  file_put_contents($fName,json_encode($data));
 }else {
-  fseek($file, -3, SEEK_END);
-  fwrite($file,$jsonData);
-  fclose($file);
+  $oldContent = file_get_contents($fName);
+  $tempData  = json_decode($oldContent);
+  //check if more that one user in file
+  if (is_array($tempData)){
+    array_push($tempData,$data);
+  }else{
+    $tempData = array($tempData);
+    array_push($tempData,$data);
+  }
+  $content = json_encode($tempData);
+  file_put_contents($fName,$content);
 }

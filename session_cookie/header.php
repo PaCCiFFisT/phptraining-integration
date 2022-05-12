@@ -19,8 +19,7 @@ if($_COOKIE['login']){
     <ul class="auth__menu--list">
       <li class="auth__menu--item ">
         <a href="<?=$_SESSION['login']==='yes' ? './logout.php' : './index.php';
-        ?>"
-           class="auth__menu--link <?=$page==='Main'? 'active' : '';?>">
+        ?>" class="auth__menu--link <?=$page==='Main'? 'active' : '';?>">
           <?=$_SESSION['login']==='yes' ? 'Exit' : 'login';?>
         </a>
       </li>

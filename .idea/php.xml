@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/../../../Program Files/php-8.1.1-Win32-vs16-x64" />
+      <path value="$PROJECT_DIR$/mongo/vendor/composer" />
+      <path value="$PROJECT_DIR$/mongo/vendor/jean85/pretty-package-versions" />
+      <path value="$PROJECT_DIR$/mongo/vendor/mongodb/mongodb" />
+      <path value="$PROJECT_DIR$/mongo/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/mongo/vendor/jakewhiteley/php-sets" />
+      <path value="$PROJECT_DIR$/../../../Program Files/drupal-9.3.9/core" />
+      <path value="$PROJECT_DIR$/../../../Program Files/drupal-9.3.9/modules" />
+      <path value="$PROJECT_DIR$/../../../Program Files/drupal-9.3.9/vendor" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.1">
+    <option name="suggestChangeDefaultLanguageLevel" value="false" />
+  </component>
+</project>
