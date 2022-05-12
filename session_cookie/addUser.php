@@ -1,11 +1,17 @@
 <?php
 session_start();
+require 'connection.php';
 $data = [
   'name'=>$_POST['name'],
   'login'=>$_POST['login'],
   'pass'=>sha1($_POST['password'])
 ];
 $fName= 'users.json';
+
+// add user to mongoDB and to json file
+
+
+
 if (!file_exists($fName)){
   file_put_contents($fName,json_encode($data));
 }else {
@@ -20,4 +26,13 @@ if (!file_exists($fName)){
   }
   $content = json_encode($tempData);
   file_put_contents($fName,$content);
+
 }
+
+// add user to mongoDB
+
+$db= $client->todo;
+$users = $db->users;
+$cursor = $users->find();
+$users->insertOne($data);
+
