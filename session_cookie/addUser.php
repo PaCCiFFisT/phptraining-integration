@@ -31,7 +31,6 @@ if (!file_exists($fName)){
 
 // add user to mongoDB
 
-$db= $client->todo;
 $users = $db->users;
 $cursor = $users->find();
 $users->insertOne($data);
