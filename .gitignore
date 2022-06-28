@@ -1,0 +1,6 @@
+.idea
+mongo/vendor/
+mongo/connection.php
+vendor/
+session_cookie/connection.php
+session_cookie/users.json
